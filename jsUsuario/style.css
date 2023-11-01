@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Nosifer&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 32px;
+  margin-left: 60vh;
+  margin-top: 5em;
+  background-image: url(img/bg-halloween.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-family: nosifer;
+  color: darkred;
+}
+
+.usuario {
+  display: flex;
+  flex-direction: column;
+  border: black solid;
+  border-radius: 6px;
+  margin: 0;
+  background-color: grey;
+}
+
+.usuario__icone {
+  transform: scale(0.5, 0.5);
+  background-color: #bbb;
+  margin-top: -3em;
+  margin-bottom: -2em;
+  border-radius: 50%;
+  border: solid black;
+}
+
+.usuario__botoes {
+  margin: 1em;
+}
+
+button {
+  font-size: 28px;
+  width: 80px;
+  height: 50px;
+}

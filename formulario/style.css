@@ -1,0 +1,68 @@
+:root{
+    --cor-principal: #fff ;
+    --cor-cabecalho-rodape: darkviolet;
+    --cor-letras-rodape-cabecalho: #fff;
+    --cor-letras-body: black;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: var(--cor-cabecalho-rodape);
+  margin: 0;
+  color: var(--cor-letras-rodape-cabecalho);
+  text-align: center;
+  min-height: 10vh;
+  padding: 0;
+  font-size: 28px;
+}
+
+form{
+    background-image: url(img/fundo-acai.jpg);
+}
+
+footer{
+    background-color: var(--cor-cabecalho-rodape);
+    color: var(--cor-letras-rodape-cabecalho);
+    font-size: 24px;
+    text-align: center
+}
+
+.divisao__acai{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tamanhos{
+    display: flex;
+    flex-direction: column;
+    width: 275px;
+}
+
+.acompanhamentos__gratuitos{
+    display: flex;
+    flex-direction: column;
+    width: 275px;
+}
+
+.acompanhamentos__adicionais{
+    display: flex;
+    flex-direction: column;
+    width: 275px;
+}
+
+.painel{
+    background-color: indigo;
+    border-radius: 25px;
+    border: solid white;
+    padding: 50px;
+    margin: 3em;
+    gap: 1em;
+    color: var(--cor-principal);
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Açai do seu Zé</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Açai do seu Zé</h1>
+    </header>
+    <form action="#" method="post">
+        <section class="divisao__acai">
+      <div class="painel tamanhos">
+        <h2>tamanho</h2>
+        <label><input type="radio" name="tamanho" value="kids-200ml" /> kids-200ml </label>
+        <label><input type="radio" name="tamanho" value="copo-550ml" /> copo-550ml </label>
+        <label><input type="radio" name="tamanho" value="copo-770" /> copo-770ml </label>
+        <label><input type="radio" name="tamanho" value="copo-330ml" /> copo-330ml </label>
+        <label><input type="radio" name="tamanho" value="love-400ml" /> love-400ml </label>
+        <label><input type="radio" name="tamanho" value="barca p-600g" /> barca p-600g </label>
+        <label><input type="radio" name="tamanho" value="barca m-1kg" /> barca m-1kg </label>
+        <label><input type="radio" name="tamanho" value="barca g-2kg" /> barca g-2kg </label>
+      </div>
+
+      <div class="painel acompanhamentos__gratuitos">
+        <h2>acompanhamentos gratuítos</h2>
+        <label><input type="checkbox" name="acompanhamento1" value="choco ball" />  choco ball </label>
+        <label><input type="checkbox"name="acompanhamento2"value="gotas de chocolate"/>gotas de chocolate </label>
+        <label><input type="checkbox" name="acompanhamento3" value="granola" /> granola </label>
+        <label><input type="checkbox"name="acompanhamento4"value="chocolate branco" />chocolate branco </label>
+        <label><input type="checkbox" name="acompanhamento5" value="confetes" />confetes </label>
+        <label><input type="checkbox" name="acompanhamento6" value="banana" /> banana </label>
+        <label><input type="checkbox" name="acompanhamento7" value="manga" /> manga </label>
+        <label><input type="checkbox" name="acompanhamento8" value="abacaxi" /> abacaxi </label>
+        <label><input type="checkbox" name="acompanhamento9" value="leite condensado" />leite condensado </label>
+        <label><input type="checkbox" name="acompanhamento10" value="leite em po" />leite em pó </label>
+        <label><input type="checkbox" name="acompanhamento11" value="pacoca" /> paçoca </label>
+        <label><input type="checkbox" name="acompanhamento12" value="amendoim"/>amendoim </label>
+        <label><input type="checkbox" name="acompanhamento13" value="sucrilhos"/>sucrilhos </label>
+        <label><input type="checkbox" name="acompanhamento14" value="chocolate ao leite" />chocolate ao leite </label>
+      </div>
+
+      <div class="painel acompanhamentos__adicionais">
+        <h2>Acompanhamentos Adicionais</h2>
+        <label><input type="checkbox" name="adicionais2" value="mems" />M&M's </label>
+        <label><input type="checkbox" name="adicionais1" value="kiwi" />kiwi </label>
+        <label><input type="checkbox" name="adicionais3" value="bis preto" />bis preto </label>
+        <label><input type="checkbox" name="adicionais4" value="bis brancovo maltineo"/>bis branco </label>
+        <label><input type="checkbox" name="adicionais5" value="ovo maltine" /> ovo maltine </label>
+        <label><input type="checkbox" name="adicionais6" value="kit kat" />kit kat </label>
+        <label><input type="checkbox" name="adicionais7" value="oreo" />oreo </label>
+        <label><input type="checkbox" name="adicionais8" value="sonhos de valsa" />sonhos de valsa </label>
+        <label><input type="checkbox" name="adicionais9" value="batom preto" />batom preto </label>
+        <label><input type="checkbox" name="adicionais10" value="batom branco" />batom branco </label>
+        <label><input type="checkbox" name="adicionais11" value="bala de goma" />bala de goma </label>
+        <label><input type="checkbox" name="adicionais12" value="stikadinho" />stikadinho </label>
+        <label><input type="checkbox" name="adicionais13" value="morango" />morango </label>
+        <label><input type="checkbox" name="adicionais14" value="trento" />trento </label>
+        <label><input type="checkbox" name="adicionais15" value="laka" />laka </label>
+        <label><input type="checkbox" name="adicionais16" value="diamante negro" />diamante negro </label>
+        <label><input type="checkbox" name="adicionais17" value="bibs" />bibs </label>
+        <label><input type="checkbox" name="adicionais18" value="ferrero rocher"/>ferrero rocher </label>
+        <label><input type="checkbox" name="adicionais19" value="twix" />twix </label>
+        <label><input type="checkbox" name="adicionais20" value="nutella" />nutella </label>
+        <label><input type="checkbox" name="adicionais21" value="creme de avela" />creme de avela </label>
+        <label><input type="checkbox" name="adicionais22" value="creme de leite ninho" />creme de leite ninho </label>
+        <label><input type="checkbox" name="adicionais23" value="creme de morango" />creme de morango </label>
+        <label><input type="checkbox" name="adicionais24" value="cookies" />cookies </label>
+        <label><input type="checkbox" name="adicionais25" value="ouro branco" />ouro branco </label>
+      </div>
+    </section>
+
+      <div class="painel entrega" id="painel de entrega">
+        <h2>Dados p/ entrega</h2>
+        <p>Endereço</p>
+        <input type="text" name="endereco" />
+        <p> Número </p>
+         <input type="number"> </label> <br>
+        <label> cor da residência <input type="color"></label>
+        <p>Bairro</p>
+        <input type="text" name="bairro" />
+        <p>cidade</p>
+        <select name="cidade">
+          <option>Selecione</option>  
+          <option value="porto alegre">Porto Alegre</option>
+          <option value="gravatai">Gravataí</option>
+          <option value="viamao">Viamão</option>
+          <option value="alvorada">Alvorada</option>
+        </select>
+     </div> 
+
+     <div class="painel"> 
+        <h2>FinalizarPedido</h2>
+      <input type="submit" name="enviar">
+      <input type="reset" name="redefinir">
+     </div>
+    </form>
+
+    <footer>
+      <p>Desenvolvido por Eduardo</p>
+    </footer>
+  </body>
+</html>

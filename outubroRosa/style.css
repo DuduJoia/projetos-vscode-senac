@@ -1,0 +1,106 @@
+:root {
+  --cor-Principal: #899a89;
+  --cor-secundaria: #ea85c7;
+  --cor-cabecalho-rodape: #f264d0;
+  --cor-body: white;
+
+  --cor-letras-rodape-cabecalho: white;
+  --cor-letras-body-hover: #black;
+}
+
+
+body {
+  color: var(--cor-letras-body-hover);
+  background-color: var(--cor-body);
+  margin: 0%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: var(--cor-cabecalho-rodape);
+  margin: 0;
+  color: var(--cor-letras-rodape-cabecalho);
+  text-align: center;
+  min-height: 20vh;
+  padding: 0;
+}
+
+footer {
+  background-color: var(--cor-cabecalho-rodape);
+  color: white;
+}
+
+.cabecalho__titulo__logo{
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+.cabecalho__titulo {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.cabecalho__menu{
+  background-color: var(--cor-secundaria);
+  display: flex;
+  justify-content: space-evenly;
+  gap: 25px;
+  list-style: none;
+  margin-top: 2em;
+  margin-bottom: 0;
+}
+
+.cabecalho__menu a{
+  text-decoration: none;
+  color: white;
+}
+
+.menu__mensagem:hover {
+  color: var(--cor-letras-body-hover);
+
+}
+
+.conteudo{
+  background-image: url(img/bg-outubro-rosa1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.conteudo__espaco{
+  margin: 10em 30em;
+  background-color: rgba(255,255,255,0.5);
+  display: fixed;
+  min-height: 75vh;
+  border: 4px solid violet;
+  font-size: 24px;
+  text-align: center;
+  width: 100vh;
+  margin-left: 25%;
+}
+
+.rodape{
+  margin-top: auto;
+  font-size: 24px;
+  text-align: center;
+}
+
+.conteudo__mensagem{
+  display: none;
+
+}
+
+#menu1:hover + #mensagem1,
+#menu2:hover + #mensagem2,
+#menu3:hover + #mensagem3,
+#menu4:hover + #mensagem4,
+#menu5:hover + #mensagem5
+{
+  display:flex;
+}
+
+

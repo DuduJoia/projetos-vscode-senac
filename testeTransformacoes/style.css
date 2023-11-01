@@ -1,0 +1,87 @@
+.transicao {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: exemplo2;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  position: relative
+}
+  /* transition: width 2s;
+}
+
+.transicao:hover {
+  width: 300px;
+} */
+
+.div__imagem {
+  transition: transform 2s;
+  display: flex;
+  justify-content: center;
+}
+
+.div__imagem:hover {
+  transform: scale(1, 2);
+  /*transform: rotatex(180deg);*/
+}
+
+@keyframes exemplo {
+  from {
+    background-color: red;
+  }
+  to{
+    background-color: aquamarine;
+  }
+
+}
+
+@keyframes exemplo2{
+    0% {background-color: red; left: 0px; top:0px}
+    25%{background-color: yellow; left:200px; top: 0px}
+    50%{background-color: blue; left:200px; top: 200px}
+    75%{background-color: green; left:0px; top: 200px;}
+    100%{background-color: red; left: 0px; top: 0px;}
+}
+
+ul{
+    position: absolute;
+    top: 0; bottom: 0; right:  0;
+    width: 150px; height: 150px; padding: 0;list-style: none;
+}
+
+li{
+    position: absolute; width: 150px; height: 150px;
+    border-radius: 5px; background: #fad335; opacity: 0.8;
+}
+
+li:nth-child(2){
+    animation: rotation1 3s infinite;
+}
+
+li:nth-child(3){
+animation: rotation2 3s infinite;
+animation-delay: 0.2s;
+}
+
+li:nth-child(4){
+    animation: rotation3 3s infinite;
+    animation-delay: 0.4s;
+}
+
+@keyframes rotation1 {
+    from {transform:rotate(-360deg);}
+    30%,60%{transform:rotate(20deg);}
+    80%{transform: rotate(0);}
+}
+
+@keyframes rotation2 {
+    from {transform:rotate(-360deg);}
+    30%,60%{transform: rotate(45deg);}
+    80%{transform: rotate(0);}
+}
+
+@keyframes rotation3{
+    from {transform: rotate(-360deg);}
+    30%,60%{transform: rotate(75deg);}
+    80%{transform: rotate(0);}
+}
