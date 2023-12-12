@@ -1,28 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
 *{
     padding: 0;
     margin: 0;
 }
 
 body{
+    font-family: montserrat;
     font-size: 18px;
     align-items: center;
+    background-color: skyblue;
+    color: white;
 }
 
-div{
+#div__formulario{
+    background-color: lightblue;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 30vh;
     border: black solid;
     border-radius: 6px;
-    width: 350px;
-    height: 350px;
+    width: 22em;
+    height: 22em;
     margin-left: 40em;
-    padding: 60px;
-    gap: 15px;
+    padding: 3.75;
+    gap: 0.938em;
     text-align: center;
+    align-items: center;
 }
 
 #botao__enviar{
-    width: 75px;
+    width: 80px;
+    margin-right: 5px;
+}
+
+#verifica__email{
+    width: 80px;
 }

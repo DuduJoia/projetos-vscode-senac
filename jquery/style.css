@@ -1,0 +1,15 @@
+input{
+    border: solid 3px;
+}
+
+.estilo{
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 350px;
+}
+
+#animarDiv{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}

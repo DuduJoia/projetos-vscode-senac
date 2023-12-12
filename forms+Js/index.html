@@ -8,17 +8,20 @@
   </head>
   <body>
     <form name="formulario">
-      <div>
+      <div id="div__formulario">
         <p>Formulário</p>
-        <label> Nome: <input type="text" name="nome" id="nome"  /> </label>
-        <label> Telefone: <input type="text" name="telefone" id="telefone" /> </label>
+        <label> Nome: <input type="text" name="nome" id="nome" /> </label>
+        <label> CPF: <input type="text" name="cpf" id="cpf numeral" placeholder="somente números" pattern="[0-9]{11}" onblur="formataCpf(this)" maxlength="11"/> </label>
+        <label>Telefone: <input type="text" name="telefone" id="telefone numeral" onblur="formataTelefone(this)" maxlength="11" /></label>
         <label> E-mail: <input type="text" name="email" id="email" /> </label>
         <label> Cidade: <input type="text" name="cidade" id="cidade" /> </label>
         <label> Estado: <input type="text" name="estado" id="estado" /> </label>
-        <input type="submit" name="enviar" id="botao__enviar"/>
+        <div id="div__botoes">
+        <input type="submit" name="enviar" id="botao__enviar" />
+        <input type="submit" value="validar email" id="verifica__email" />
+      </div>
       </div>
     </form>
-
     <script src="script.js"></script>
   </body>
 </html>
